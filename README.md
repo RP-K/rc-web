@@ -1,2 +1,5 @@
-# rc-web
-Rain Computing WEB 2.0
+# Getting Started with Rain Computing
+
+#### npm install
+
+#### npm start
