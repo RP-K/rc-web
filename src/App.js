@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div id="main-app">
       <Header />
-      <div className="min-h-screen">
+      <div className="min-h-screen my-2">
         <Outlet />
       </div>
       <Footer />

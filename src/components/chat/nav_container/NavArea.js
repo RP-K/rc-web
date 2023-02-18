@@ -9,7 +9,7 @@ const NavArea = ({ show }) => {
   return (
     <>
       <div
-        className="flex gap-x-3 items-center justify-around border-b-[1px] border-b-primary-main transition-all duration-1000"
+        className="flex gap-x-3 items-center justify-around border-y-[1px] border-y-primary-main transition-all duration-1000"
         style={{ display: !show && "none" }}
       >
         {navItems.map((item) => (
@@ -24,8 +24,11 @@ const NavArea = ({ show }) => {
           </button>
         ))}
       </div>
-      <div className="overflow-y-auto" style={{ display: !show && "none" }}>
-        {[...Array(10).keys()].map((i, j) => (
+      <div
+        className="max-h-[80vh] lg:max-h-[unset] overflow-y-auto"
+        style={{ display: !show && "none" }}
+      >
+        {[...Array(15).keys()].map((i, j) => (
           <p className="my-10" key={j}>
             {i}
           </p>

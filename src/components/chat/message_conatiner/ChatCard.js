@@ -1,4 +1,4 @@
-const ProfileCard = ({ toggleShow }) => {
+const ChatCard = () => {
   const profile = {
     firstName: "Mr",
     lastName: "User",
@@ -6,18 +6,15 @@ const ProfileCard = ({ toggleShow }) => {
   };
   const name = profile.firstName + " " + profile.lastName;
   return (
-    <div className="flex p-2 md:text-xl items-center gap-4  relative">
-      <div className="lg:hidden absolute top-2 right-5" onClick={toggleShow}>
-        i
-      </div>
+    <div className="flex p-2 md:text-xl items-center justify-end gap-4 border-b-[1px] border-b-primary-main">
+      <span className="overflow-clip">{name}</span>
       <img
         className="w-20 h-20 rounded-full"
         src={profile.profilePic}
         alt={name}
       />
-      <span className="overflow-clip">{name}</span>
     </div>
   );
 };
 
-export default ProfileCard;
+export default ChatCard;
