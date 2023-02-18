@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="border-t">
       <footer aria-label="Site Footer" className="bg-white">
 
             
