@@ -21,7 +21,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 #main-app {
-  background-color: red;
+  /* background-color: red; */
   min-height: 100vh;
   padding: 10px 30px;
 }
