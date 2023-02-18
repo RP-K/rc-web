@@ -41,7 +41,7 @@ body {
   padding: 10px 30px;
 }
 #chat-wrapper {
-  min-height: calc(100vh - 40px);
+  height: clamp(80vh, calc(100vh - 40px), 98vh);
 }
 .chat-container {
   min-height: 100%;
