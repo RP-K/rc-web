@@ -1,9 +1,11 @@
-import Footer from "./components/common/Footer";
+import { Outlet } from "react-router";
+import Header from "./components/header";
 
 const App = () => {
   return (
     <div id="main-app">
-      <Footer/>
+      <Header />
+      <Outlet />
     </div>
   );
 };
