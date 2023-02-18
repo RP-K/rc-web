@@ -256,7 +256,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-           
+
           <p className="text-xs text-gray-500">
             &copy; 2023. Rain Computing . All rights reserved.
           </p>
