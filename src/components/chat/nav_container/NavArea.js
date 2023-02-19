@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CaseCard from "./CaseCard";
 
 const navItems = ["Chats", "Cases", "Contacts"];
 const NavArea = ({ show }) => {
@@ -15,7 +16,8 @@ const NavArea = ({ show }) => {
         {navItems.map((item) => (
           <button
             className={`p-2 transition-all duration-700 ${
-              activeTab === item && "underline text-secondary-main font-bold"
+              activeTab === item &&
+              "underline text-secondary-main font-bold font-title"
             }`}
             key={item}
             onClick={() => handleClick(item)}
@@ -25,14 +27,13 @@ const NavArea = ({ show }) => {
         ))}
       </div>
       <div
-        className="max-h-[80vh] lg:max-h-[unset] overflow-y-auto"
+        className="max-h-[80vh] lg:max-h-[unset] overflow-y-auto pr-1 mt-1"
         style={{ display: !show && "none" }}
       >
-        {[...Array(15).keys()].map((i, j) => (
-          <p className="my-10" key={j}>
-            {i}
-          </p>
-        ))}
+        {activeTab === "Cases" &&
+          [...Array(4).keys()].map((i, j) => (
+            <CaseCard key={j} isActive={j === 1} />
+          ))}
       </div>
     </>
   );
