@@ -5,6 +5,8 @@ import ErrorBoundary from "./components/common/ErrorBoundary";
 import withSuspense from "./utils/hoc/withSuspense";
 
 const ChatPage = withSuspense(lazy(() => import("./pages/ChatPage")));
+const AttorneyPage = withSuspense(lazy(() => import("./pages/AttorneyPage")));
+const Signup = withSuspense(lazy(() => import("./components/auth/Signup")));
 
 export const routes = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ export const routes = createBrowserRouter([
       {
         path: "/chat",
         element: <ChatPage />,
+      },
+      {
+        path: "/attorney",
+        element: <AttorneyPage />,
+      },
+      {
+        path: "/signup",
+        element: <Signup />,
       },
     ],
   },
