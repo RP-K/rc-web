@@ -7,11 +7,17 @@ module.exports = {
       colors: {
         primary: {
           main: "var(--primary-main)",
+          light: "var(--primary-light)",
         },
         secondary: {
           main: "var(--secondary-main)",
           light: "var(--secondary-light)",
         },
+      },
+      fontFamily: {
+        default: "var(--default-font)",
+        title: "var(--title-font)",
+        subtitle: "var(--subtitle-font)",
       },
     },
     screens: {

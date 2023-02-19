@@ -4,7 +4,7 @@ import NavContainer from "./nav_container";
 const Chat = () => {
   return (
     <div
-      className="grid grid-cols-[minmax(300px,350px)_1fr] gap-x-2 gap-y-4"
+      className="grid auto-rows-min lg:auto-rows-auto grid-cols-[minmax(330px,380px)_1fr] gap-2"
       id="chat-wrapper"
     >
       <NavContainer />

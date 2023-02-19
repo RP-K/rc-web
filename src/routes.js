@@ -2,6 +2,7 @@ import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import ErrorBoundary from "./components/common/ErrorBoundary";
+import ForgetPassword from "./pages/ForgetPassword";
 import withSuspense from "./utils/hoc/withSuspense";
 
 const ChatPage = withSuspense(lazy(() => import("./pages/ChatPage")));
@@ -33,6 +34,10 @@ export const routes = createBrowserRouter([
         path: "/signup",
         element: <Signup />,
       },
+      {
+        path:"/forget",
+        element: <ForgetPassword/>
+      }
     ],
   },
 ]);
