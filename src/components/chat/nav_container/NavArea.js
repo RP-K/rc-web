@@ -1,12 +1,16 @@
 import { useState } from "react";
+import profile from "../../../assets/image/iyer.jpg";
+import ChatList from "./ChatList";
 import CaseCard from "./CaseCard";
 
 const navItems = ["Chats", "Cases", "Contacts"];
 const NavArea = ({ show }) => {
   const [activeTab, setActiveTab] = useState("Chats");
+
   const handleClick = (item) => {
     setActiveTab(item);
   };
+
   return (
     <>
       <div
@@ -30,6 +34,19 @@ const NavArea = ({ show }) => {
         className="max-h-[80vh] lg:max-h-[unset] overflow-y-auto pr-1 mt-1"
         style={{ display: !show && "none" }}
       >
+        {activeTab === "Chats" &&
+          [...Array(15).keys()].map((i, j) => (
+            <div className="" key={j}>
+              <ChatList
+                profile={profile}
+                active={`Active`}
+                user={`krishnakumar s`}
+                notification={`@`}
+                date={`18/02/2022`}
+                isActive={j === 2}
+              />
+            </div>
+          ))}
         {activeTab === "Cases" &&
           [...Array(4).keys()].map((i, j) => (
             <CaseCard key={j} isActive={j === 1} />
