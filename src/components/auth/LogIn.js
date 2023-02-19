@@ -1,76 +1,77 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo/logo.png";
 
-function LogIn() {
+const LogIn = () => {
   return (
     <>
-      <section className="h-screen ">
-        <div class="h-full p-6">
-          <div class="flex xl:justify-center lg:justify-between justify-center items-center flex-wrap h-full g-6">
-            <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-5/12 mb-12 md:mb-0">
-              <form>
-                <div className="mb-12">
-                  <h1 className="text-lg text-blue-600 flex justify-center">
-                    RAIN COMPUTING
-                  </h1>
-                </div>
-                <div className="mb-8">
-                  <p className="text-lg flex justify-center">
-                    Welcome to Rain Computing
-                  </p>
-                </div>
-                <div className="mb-6">
-                  <input
-                    type="text"
-                    className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-blue-300"
-                    id="exampleFormControlInput2"
-                    placeholder="Email address"
-                  />
-                </div>
-
-                <div className="mb-6">
-                  <input
-                    type="password"
-                    className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-blue-300"
-                    id="exampleFormControlInput2"
-                    placeholder="Password"
-                  />
-                </div>
-
-                <div className="flex justify-end mb-6">
-                  <a href="/#" className="text-blue-800">
-                    Forgot password?
-                  </a>
-                </div>
-
-                  <div className="flex items-center justify-center my-3">
-                    <button
-                      className="bg-secondary-main text-white font-bold py-2 px-16 rounded focus:outline-none focus:shadow-outline"
-                      type="submit"
-                    >
-                      Sign In
-                    </button>
-                  </div>
-
-                  <div className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">
-                    <p className="text-center font-semibold mx-4 my-6">Or</p>
-                  </div>
-
-                  <p className="text-sm font-semibold mt-4 pt-8 flex justify-center">
-                    New Rain Computing?
-                    <a
-                      href="/#"
-                      className="text-blue-600 hover:ease-in ease-in-out duration-300 mr-2 text-underline-offset: 4px"
-                    >
-                      Create Account
-                    </a>
-                  </p>
-              </form>
+      <div className=" flex justify-center h-full p-6">
+        <div className="w-full max-w-xl">
+          <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div className="mb-8 flex justify-center">
+              <img src={logo} className="h-10" alt=" " />
             </div>
-          </div>
+            <div className="mb-4 text-center">
+              <p className="text-xl py-5 text-primary-main font-bold ">
+                Welcome to Rain Computing
+              </p>
+            </div>
+            <div className="mb-6">
+              <label className="block text-gray-700 text-sm font-bold mb-2">
+                Email
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                placeholder="Enter Email"
+              />
+            </div>
+
+            <div className="mb-6">
+              <label className="block text-gray-700 text-sm font-bold mb-2">
+                password
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="password"
+                type="password"
+                placeholder="Enter Your Password"
+              />
+            </div>
+
+            <div className="flex justify-end mb-6">
+              <a href="/#" className="text-primary-main">
+                Forgot password?
+              </a>
+            </div>
+
+            <div className="flex items-center justify-center my-3">
+              <button
+                className="bg-secondary-main text-white font-bold py-2 px-16 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+              >
+                Log In
+              </button>
+            </div>
+
+            <div className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">
+              <p className="text-center font-semibold mx-4 my-6">Or</p>
+            </div>
+
+            <p className="text-sm font-semibold pt-2 flex justify-center">
+              New Rain Computing?
+              <Link to="/signup">
+                <p className="text-primary-main underline pr-2">
+                  Create Account
+                </p>
+              </Link>
+            </p>
+          </form>
         </div>
-      </section>
+      </div>
     </>
   );
-}
+};
 
 export default LogIn;
