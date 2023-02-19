@@ -21,9 +21,9 @@ const Header = () => {
 
   return (
     <div>
-      <div >
+      <div>
         {isMobileview ? (
-                      // Desktop View
+          // Desktop View
 
           <div className="flex justify-between px-4 py-3 items-center border-b-2">
             {" "}
@@ -38,8 +38,8 @@ const Header = () => {
                   className={({ isActive }) =>
                     classNames(
                       isActive &&
-                        "text-secondary-main underline transition-all duration-500",
-                      "font-semibold  py-0.5 items-center"
+                        "text-secondary-main underline transition-all duration-500 font-title font-semibold",
+                      "py-0.5 items-center "
                     )
                   }
                 >
