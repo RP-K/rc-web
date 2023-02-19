@@ -7,9 +7,9 @@ const App = () => {
     <div id="main-app">
       <Header />
       <div className="min-h-screen my-2">
-        <Outlet />
+      <Outlet />
       </div>
-      <Footer />
+      <Footer/>
     </div>
   );
 };
