@@ -41,9 +41,13 @@ const LogIn = () => {
             </div>
 
             <div className="flex justify-end mb-6">
-              <a href="/#" className="text-primary-main">
+              {/* <a href="/#" className="text-primary-main"> */}
+              <Link to ="/forget">
+              <p className="text-primary-main">
                 Forgot password?
-              </a>
+                </p>
+                </Link>
+              {/* </a> */}
             </div>
 
             <div className="flex items-center justify-center my-3">
