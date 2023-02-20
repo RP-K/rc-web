@@ -41,13 +41,9 @@ const LogIn = () => {
             </div>
 
             <div className="flex justify-end mb-6">
-              {/* <a href="/#" className="text-primary-main"> */}
-              <Link to ="/forget">
-              <p className="text-primary-main">
-                Forgot password?
-                </p>
-                </Link>
-              {/* </a> */}
+              <Link to="/forget">
+                <p className="text-primary-main">Forgot password?</p>
+              </Link>
             </div>
 
             <div className="flex items-center justify-center my-3">
@@ -64,7 +60,7 @@ const LogIn = () => {
             </div>
 
             <p className="text-sm font-semibold pt-2 flex justify-center">
-              New Rain Computing?
+              Efficient Legal solutions start here? 
               <Link to="/signup">
                 <p className="text-primary-main underline pr-2">
                   Create Account
