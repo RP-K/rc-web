@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  --primary-light: #b3c8e9;
+  --primary-light: #dae0ff;
   --primary-main: #0346b4;
-  --secondary-main: #660101;
-  --secondary-light: #fdfaf8;
+  --secondary-main: #ff4278;
+  --secondary-light: #ffeef2;
   --subtitle-font: "Hind Madurai", sans-serif;
   --title-font: "Merriweather Sans", sans-serif;
   --default-font: "Rubik", sans-serif;
