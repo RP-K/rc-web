@@ -2,10 +2,14 @@ import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import ErrorBoundary from "./components/common/ErrorBoundary";
-import ForgetPassword from "./pages/ForgetPassword";
 import withSuspense from "./utils/hoc/withSuspense";
 
+const LogIn = withSuspense(lazy(() => import("./components/auth/LogIn")));
+const Signup = withSuspense(lazy(() => import("./components/auth/Signup")));
+const ForgetPassword = withSuspense(lazy(() => import("./pages/ForgetPassword")));
 const ChatPage = withSuspense(lazy(() => import("./pages/ChatPage")));
+const AttorneyPage = withSuspense(lazy(() => import("./pages/AttorneyPage")));
+const LandingPage = withSuspense(lazy(() => import("./pages/LandingPage")));
 
 export const routes = createBrowserRouter([
   {
@@ -16,18 +20,28 @@ export const routes = createBrowserRouter([
       {
         path: "/",
         index: true,
-        element: (
-          <h1 className="text-3xl font-bold underline">This is HomePage</h1>
-        ),
+        element: <LandingPage/>
       },
       {
         path: "/chat",
         element: <ChatPage />,
       },
       {
+        path: "/attorney",
+        element: <AttorneyPage />,
+      },
+      {
         path:"/forget",
         element: <ForgetPassword/>
-      }
+      },
+      {
+        path: "/login",
+        element: <LogIn />,
+      },
+      {
+        path: "/signup",
+        element: <Signup />,
+      },
     ],
   },
 ]);
