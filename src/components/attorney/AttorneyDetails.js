@@ -15,7 +15,7 @@ const AttorneyDetails = () => {
 
   return (
     <div className=" mt-10  ">
-        <div className='md:grid md:grid-cols-4 px-3  bg-secondary-light  md:py-'>
+        <div className='md:grid md:grid-cols-4 px-3  bg-secondary-light  md:py-24'>
             <div className='col-span-2 sm:flex justify-center md:px-2 md:h-96 '>
             <img className=" my-2 rounded-md sm:justify-center"src={Attorney?.profilePic?.iyer} alt='attorney profile'/>
             </div>

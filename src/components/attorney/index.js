@@ -6,8 +6,8 @@ import AttorneyRequest from './AttorneyRequest'
 const Attorney = () => {
   return (
     <div>
-    <AttorneyRegister />
-    {/* <AttorneyDetails /> */}
+    {/* <AttorneyRegister /> */}
+    <AttorneyDetails />
     {/* <AttorneyRequest/> */}
     </div>
   )
