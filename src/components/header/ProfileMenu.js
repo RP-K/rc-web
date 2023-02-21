@@ -22,7 +22,7 @@ const ProfileMenu = () => {
       leaveFrom="transform opacity-100 scale-100"
       leaveTo="transform opacity-0 scale-95"
     >
-      <Menu.Items className="origin-top-left absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none">
+      <Menu.Items className="origin-top-left absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none z-10">
         <div className="py-1">
           <Menu.Item>
             <Link
