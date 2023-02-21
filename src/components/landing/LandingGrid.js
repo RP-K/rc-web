@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import MessageIcon  from "../../assets/icon/MessageIcon";
 import ChatIcon from "../../assets/icon/ChatIcon";
 import FileIcon from "../../assets/icon/FileIcon";
 import PrivacyIcon from "../../assets/icon/PrivacyIcon";
+import { useNavigate } from 'react-router-dom'
 
 const LandingGrid = () => {
+  const navigate = useNavigate()
   return (
     <div className="relative isolate overflow-hidden bg-gray-700 py-24 sm:py-32">
   <svg viewBox="0 0 1097 845" aria-hidden="true" className="hidden transform-gpu blur-3xl sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:w-[68.5625rem]">
@@ -34,7 +35,8 @@ const LandingGrid = () => {
     </div>
     <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
       <div className="grid grid-cols-1  leading-7 sm:grid-cols-2  ">
-        <button type="button" className="border border-slate-300 hover:border-slate-400 bg-slate-600 sm:max-w-[4rem] md:max-w-[6.25rem] font-semibold text-white">
+      
+        <button onClick={ () => {navigate ('/login')}} type="button" className="border border-slate-300 hover:border-slate-400 bg-slate-600 sm:max-w-[4rem] md:max-w-[6.25rem] font-semibold text-white">
         Join Now
         </button>
       </div>
