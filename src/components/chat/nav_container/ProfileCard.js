@@ -1,17 +1,20 @@
-const ProfileCard = ({ toggleShow }) => {
+import Arrow from "../../../assets/icon/Arrow";
+
+const ProfileCard = ({ toggleShow, show }) => {
   const profile = {
     firstName: "Mr",
     lastName: "User",
-    profilePic: "https://www.material-tailwind.com/img/face-2.jpg",
+    profilePic:
+      "https://roget.biz/wp-content/uploads/2011/08/cartoonize_pet.jpg",
   };
   const name = profile.firstName + " " + profile.lastName;
   return (
-    <div className="flex p-1 lg:p-2 md:text-xl items-center gap-4  relative">
-      <div className="lg:hidden absolute top-2 right-5" onClick={toggleShow}>
-        i
+    <div className="relative flex p-1 2xl:p-2 md:text-xl items-center justify-start gap-4  border-b-primary-main">
+      <div className="lg:hidden absolute top-50 right-5" onClick={toggleShow}>
+        <Arrow isOpen={show} />
       </div>
       <img
-        className="w-12 h-12 lg:w-20 lg:h-20 rounded-full"
+        className="w-12 h-12 2xl:w-16 2xl:h-16 rounded-full"
         src={profile.profilePic}
         alt={name}
       />

@@ -4,13 +4,15 @@ import Header from "./components/header";
 
 const App = () => {
   return (
-    <div id="main-app">
+    <>
       <Header />
-      <div className="min-h-screen my-2">
-      <Outlet />
+      <div id="main-app">
+        <div className="min-h-[90vh] my-2">
+          <Outlet />
+        </div>
       </div>
-      <Footer/>
-    </div>
+      <Footer />
+    </>
   );
 };
 export default App;

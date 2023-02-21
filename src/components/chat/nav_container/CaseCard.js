@@ -16,8 +16,8 @@ const CaseCard = ({ isActive = false }) => {
 
   return (
     <div
-      className={`border my-1 py-2 rounded ${
-        isActive ? "border-secondary-main border-[2px] bg-white" : ""
+      className={`border my-1 py-2 rounded hover:bg-secondary-light ${
+        isActive ? "border-secondary-main border-[2px] bg-secondary-light" : ""
       }`}
     >
       <Accordion
