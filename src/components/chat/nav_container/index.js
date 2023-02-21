@@ -14,7 +14,7 @@ const NavContainer = () => {
   }, [isDesktop]);
 
   return (
-    <div className="col-span-2 lg:col-span-1 chat-container shadow rounded-md flex flex-col bg-[#eeeeee]">
+    <div className="col-span-2 lg:col-span-1 chat-container shadow rounded-md flex flex-col bg-[#EFFFFD]">
       <ProfileCard toggleShow={toggleShow} show={show} />
       <NavArea show={show} />
     </div>
