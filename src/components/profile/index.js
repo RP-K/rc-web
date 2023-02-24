@@ -7,7 +7,7 @@ const Profile = () => {
     return (
         <div className="w-full block md:block lg:block">
         <section className="mx-auto w-full max-w-6xl">
-        <div className="space-y-10 bg-[#E8F9FD]" >
+        <div className="space-y-10 " >
            <div className="grid md:grid-cols-3 ">
            <form action="#" method="POST" className="mx-auto my-16 max-w-xl sm:mt-20 md:col-span-2">
            <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
