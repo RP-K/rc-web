@@ -10,6 +10,7 @@ const ForgetPassword = withSuspense(lazy(() => import("./pages/ForgetPassword"))
 const ChatPage = withSuspense(lazy(() => import("./pages/ChatPage")));
 const AttorneyPage = withSuspense(lazy(() => import("./pages/AttorneyPage")));
 const LandingPage = withSuspense(lazy(() => import("./pages/LandingPage")));
+const Profile = withSuspense(lazy(() => import("./components/profile")));
 
 export const routes = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ export const routes = createBrowserRouter([
       {
         path: "/signup",
         element: <Signup />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
       },
     ],
   },
